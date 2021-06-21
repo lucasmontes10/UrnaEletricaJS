@@ -78,7 +78,7 @@ body{
 }
 
 .d2{
-    height: 50px;
+    height: 60px;
     font-size: 14px;
     padding-left: 10px;
     border-top: 2px solid #000;
@@ -135,4 +135,19 @@ body{
 }
 .d1-right{
     width: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.d1-image{
+    border: 1px solid #000;
+    background-color: #FFF;
+    font-size: 15px;
+}
+.d1-image img{
+    width: 100%;
+}
+.d1-image.small{
+    width: 80%;
+    font-size: 13px;
 }
