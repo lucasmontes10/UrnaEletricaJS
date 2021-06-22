@@ -3,6 +3,7 @@
     50% {opacity: 0.1;}
     100%{ opacity: 1;}
 }
+/* OLAAA */
 
 *{
     box-sizing: border-box;
@@ -150,4 +151,11 @@ body{
 .d1-image.small{
     width: 80%;
     font-size: 13px;
+}
+
+/* CLASSE PARA QUANDO O VOTO É NULO OU EM BRANCO */
+
+.aviso-grande{
+    font-size: 30px;
+    font-weight: bold;
 }

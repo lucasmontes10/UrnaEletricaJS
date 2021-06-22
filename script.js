@@ -19,16 +19,43 @@ function iniciarEtapa(){
             numeroHTML += '<div class="numero"></div>';
         }
     }
-    titulo.innerHTML = '';
+    titulo.style.display = 'none';
     cargo.innerHTML = etapa.titulo;
     rodape.style.display = 'none';
     lateral.style.display = 'none';
     descricao.innerHTML = '';
     numeros.innerHTML = numeroHTML;
 }
+// PONTO IMPORTANTE DO PROGRAMA PARA VERIFICAR QUAL É O CANDIDATO
 function atualizaInterface(){
-    alert("Voto computado!");
-    console.log(numeroDigitado);
+    let info = etapas[etapaAtual]; //Estranhamente mesmo eu só tendo o elemento presidente, eu preciso colocar a posição da lista
+    let candidato = info.candidatos.filter((item) =>{
+        if (item.numero == numeroDigitado){
+            return true;
+        }else{
+            return false;
+        }
+    });
+    if(candidato.length > 0){
+        candidato = candidato[0];
+        titulo.style.display = 'flex';
+        descricao.innerHTML = "Nome: " + candidato.nome + "<br> Partido: " + candidato.partido;
+        rodape.style.display = 'flex';
+        let lateralHtml = '';
+        for (let i in candidato.fotos){
+            if(candidato.fotos[i].small == false){
+                lateralHtml += `<div class="d1-image"><img src="images/${candidato.fotos[i].url}" alt="">${candidato.fotos[i].legenda}</div>`;
+            }else{
+                lateralHtml += `<div class="d1-image small"><img src="images/${candidato.fotos[i].url}" alt="">${candidato.fotos[i].legenda}</div>`;
+            }
+        }
+        lateral.innerHTML = lateralHtml;
+        lateral.style.display = 'flex';
+    }else{
+        titulo.style.display = 'flex';
+        rodape.style.display = 'flex';
+        descricao.innerHTML = '<div class="aviso-grande pisca">VOTO NULO</div>'
+    }
 }
 
 function clicou(n){

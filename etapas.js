@@ -6,8 +6,8 @@ let etapas = [
         numeros: 4,
         candidatos: [
             {
-                numero: 1111,
-                name: "Fulaninho",
+                numero: '1111',
+                nome: "Fulaninho",
                 partido: "ABC", 
                 fotos:[
                  {url: '38111.jpg', legenda:'Presidente', small: false},
@@ -15,8 +15,8 @@ let etapas = [
                 ]
             },
             {
-                numero: 222,
-                name: "Lukita",
+                numero: '2222',
+                nome: "Lukita",
                 partido: "BBC",
                 fotos:[
                     {url:'77222.jpg', legenda:"Presidante", small: false},
