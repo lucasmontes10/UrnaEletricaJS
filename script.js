@@ -33,9 +33,10 @@ function iniciarEtapa(){
     numeros.innerHTML = numeroHTML;
 }
 // PONTO IMPORTANTE DO PROGRAMA PARA VERIFICAR QUAL É O CANDIDATO
+let candidato;
 function atualizaInterface(){
     let info = etapas[etapaAtual]; //Estranhamente mesmo eu só tendo o elemento presidente, eu preciso colocar a posição da lista
-    let candidato = info.candidatos.filter((item) =>{
+    candidato = info.candidatos.filter((item) =>{
         if (item.numero == numeroDigitado){
             return true;
         }else{
@@ -63,7 +64,6 @@ function atualizaInterface(){
         descricao.innerHTML = '<div class="aviso-grande pisca">VOTO NULO</div>'
     }
 }
-
 function clicou(n){
     let numeroAtual = document.querySelector(".numero.pisca");
     if (numeroAtual !== null){
@@ -117,6 +117,8 @@ function construirFim(){
     numeros.innerHTML = " ";
     finalVar = true;
     som_final.play();
+    escreveInformacao(candidato);
 }
 
 iniciarEtapa();
+
