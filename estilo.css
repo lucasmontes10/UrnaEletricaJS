@@ -159,3 +159,12 @@ body{
     font-size: 30px;
     font-weight: bold;
 }
+#voto-branco{
+    font-size: 45px;
+    font-weight: bold;
+}
+.final-tela{
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+}

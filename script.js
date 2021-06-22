@@ -7,10 +7,14 @@ let lateral = document.querySelector(".d1-right");
 
 let etapaAtual = 0;
 let numeroDigitado = ''; // COMPUTAR O VOTO DIGITADO
+let votoBranco = false; 
+let finalVar = false; // VERIFICAR O FIM DA OPERAÇÃO
 
 function iniciarEtapa(){
     let etapa = etapas[etapaAtual];
-    let numeroHTML = ' ';
+    let numeroHTML = '';
+    numeroDigitado = '';
+    votoBranco = false;
     // VAI ADICIONAR A QUANTIDADE DE QUADRADOS
     for (let i = 0; i < etapa.numeros; i++){
         if (i == 0){
@@ -72,13 +76,42 @@ function clicou(n){
     }
 }
 function branco(){
-    alert("Você clicou na tecla branca");
+    if (finalVar == false){
+        if (numeroDigitado == ""){
+            titulo.style.display = "flex";
+            rodape.style.display = "flex";
+            numeros.innerHTML = '';
+            descricao.innerHTML = '<div id = "voto-branco" class="aviso-grande pisca">VOTO EM BRANCO</div>'
+            lateral.style.display = "none";
+            votoBranco = true;
+        }else{
+            alert("Para utilizar o voto Branco não pode ter numeros, por favor use o CORRIGE");
+        }
+    }
 }
 function corrige(){
-    alert("Ok vamos corrigir");
+    if(finalVar == false){
+        iniciarEtapa();
+    }
 }
 function confirma(){
-    alert("Vaiii confirma");
+    let infos = etapas[etapaAtual];
+    console.log(infos);
+    if(numeroDigitado.length == infos.numeros){
+        console.log("Estive aqui");
+        construirFim();
+    }else if(votoBranco == true){
+        construirFim();
+    }
+}
+function construirFim(){
+    titulo.style.display = 'none';
+    cargo.innerHTML = '';
+    rodape.style.display = 'none';
+    lateral.style.display = 'none';
+    descricao.innerHTML = "<div class='final-tela pisca'>FIM</div>";
+    numeros.innerHTML = " ";
+    finalVar = true;
 }
 
 iniciarEtapa();
