@@ -4,6 +4,8 @@ let numeros = document.querySelector(".d1-3");
 let rodape = document.querySelector(".d2");
 let descricao = document.querySelector(".d1-4");
 let lateral = document.querySelector(".d1-right");
+let som_tecla = document.querySelector(".som-teclas audio");
+let som_final = document.querySelector(".som_final audio");
 
 let etapaAtual = 0;
 let numeroDigitado = ''; // COMPUTAR O VOTO DIGITADO
@@ -68,6 +70,7 @@ function clicou(n){
         numeroAtual.innerHTML = n;
         numeroDigitado += n;
         numeroAtual.classList.remove('pisca');
+        som_tecla.play();
         if (numeroAtual.nextElementSibling != null){
             numeroAtual.nextElementSibling.classList.add('pisca');   
         }else{
@@ -84,6 +87,7 @@ function branco(){
             descricao.innerHTML = '<div id = "voto-branco" class="aviso-grande pisca">VOTO EM BRANCO</div>'
             lateral.style.display = "none";
             votoBranco = true;
+            som_tecla.play();
         }else{
             alert("Para utilizar o voto Branco não pode ter numeros, por favor use o CORRIGE");
         }
@@ -92,13 +96,13 @@ function branco(){
 function corrige(){
     if(finalVar == false){
         iniciarEtapa();
+        som_tecla.play();
     }
 }
 function confirma(){
     let infos = etapas[etapaAtual];
     console.log(infos);
     if(numeroDigitado.length == infos.numeros){
-        console.log("Estive aqui");
         construirFim();
     }else if(votoBranco == true){
         construirFim();
@@ -112,6 +116,7 @@ function construirFim(){
     descricao.innerHTML = "<div class='final-tela pisca'>FIM</div>";
     numeros.innerHTML = " ";
     finalVar = true;
+    som_final.play();
 }
 
 iniciarEtapa();
