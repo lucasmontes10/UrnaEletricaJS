@@ -101,7 +101,6 @@ function corrige(){
 }
 function confirma(){
     let infos = etapas[etapaAtual];
-    console.log(infos);
     if(numeroDigitado.length == infos.numeros){
         construirFim();
     }else if(votoBranco == true){

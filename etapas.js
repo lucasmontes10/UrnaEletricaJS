@@ -6,20 +6,20 @@ let etapas = [
         numeros: 4,
         candidatos: [
             {
-                numero: '1111',
-                nome: "Fulaninho",
-                partido: "ABC", 
+                numero: '1889',
+                nome: "Deodoro da Fonseca",
+                partido: "NENHUM", 
                 fotos:[
-                 {url: '38111.jpg', legenda:'Presidente', small: false},
+                 {url: 'Deodoro_da_Fonseca_(1889).jpg', legenda:'Presidente', small: false, link: "https://pt.wikipedia.org/wiki/Deodoro_da_Fonseca"},
                  {url: '99.jpg', legenda:'Vice-Presidente', small: true}
-                ]
+                ],
             },
             {
                 numero: '2222',
                 nome: "Lukita",
                 partido: "BBC",
                 fotos:[
-                    {url:'77222.jpg', legenda:"Presidante", small: false},
+                    {url:'77222.jpg', legenda:"Presidante", small: false, link: "https://pt.wikipedia.org/wiki/Deodoro_da_Fonseca"},
                     {url:'99_2.jpg', legenda: "Vice-Presidente", small: true}
                 ]
             },
@@ -29,7 +29,11 @@ let etapas = [
 
 // Função para escrever as informações a respeito do candidato
 function escreveInformacao(candidato){
-    if(candidato.numero == "1111"){
-        modificar.innerHTML = "<iframe src='https://pt.wikipedia.org/wiki/Jair_Bolsonaro' frameborder='5px'></iframe>";
+    // Por algum motivo nn está funcionando
+    console.log(candidato.fotos[0].link);
+    if(candidato.numero == "1889"){
+        window.open(`${candidato.fotos[0].link}`, '_blank');
+        //Ideia inicial, porém está dando inconsistência
+        //modificar.innerHTML = "<iframe src = '${candidato.fotos[0].link}' frameborder='4'></iframe>";
     }
 }
