@@ -36,6 +36,7 @@ function iniciarEtapa(){
 let candidato;
 function atualizaInterface(){
     let info = etapas[etapaAtual]; //Estranhamente mesmo eu só tendo o elemento presidente, eu preciso colocar a posição da lista
+    //Pega as informações do presidente procurado
     candidato = info.candidatos.filter((item) =>{
         if (item.numero == numeroDigitado){
             return true;
@@ -52,7 +53,7 @@ function atualizaInterface(){
         for (let i in candidato.fotos){
             if(candidato.fotos[i].small == false){
                 lateralHtml += `<div class="d1-image"><img src="images/${candidato.fotos[i].url}" alt="">${candidato.fotos[i].legenda}</div>`;
-            }else{
+            }else if(candidato.numero != '1891'){
                 lateralHtml += `<div class="d1-image small"><img src="images/${candidato.fotos[i].url}" alt="">${candidato.fotos[i].legenda}</div>`;
             }
         }
@@ -116,7 +117,7 @@ function construirFim(){
     numeros.innerHTML = " ";
     finalVar = true;
     som_final.play();
-    escreveInformacao(candidato);
+    setTimeout(escreveInformacao, 1500);
 }
 
 iniciarEtapa();
