@@ -52,9 +52,9 @@ function atualizaInterface(){
         let lateralHtml = '';
         for (let i in candidato.fotos){
             if(candidato.fotos[i].small == false){
-                lateralHtml += `<div class="d1-image"><img src="images/${candidato.fotos[i].url}" alt="">${candidato.fotos[i].legenda}</div>`;
+                lateralHtml += `<div class="d1-image"><img src="images/presidentes/${candidato.fotos[i].url}" alt="">${candidato.fotos[i].legenda}</div>`;
             }else if(candidato.numero != '1891'){
-                lateralHtml += `<div class="d1-image small"><img src="images/${candidato.fotos[i].url}" alt="">${candidato.fotos[i].legenda}</div>`;
+                lateralHtml += `<div class="d1-image small"><img src="images/presidentes/${candidato.fotos[i].url}" alt="">${candidato.fotos[i].legenda}</div>`;
             }
         }
         lateral.innerHTML = lateralHtml;
