@@ -123,7 +123,7 @@ let etapas = [
             },
             {
                 numero: '1930',
-                nome: "Getulio Vargas",
+                nome: "Getúlio Vargas",
                 partido: "NENHUM",
                 fotos:[
                     {url:'Getulio_Vargas_(1930).jpg', legenda:"Presidente", small: false, link: "https://pt.wikipedia.org/wiki/Get%C3%BAlio_Vargas"},
@@ -174,6 +174,177 @@ let etapas = [
                 fotos:[
                     {url:'CarlosLuz.jpg', legenda:"Presidente", small: false, link: "https://pt.wikipedia.org/wiki/Carlos_Luzo"},
                     {url:'', legenda: "Sem Vice-Presidente", small: true}
+                ]   
+            },
+            {
+                numero: '1956',
+                nome: "Nereu Ramos",
+                partido: "PSD",
+                fotos:[
+                    {url:'Presidente_Nereu_Ramos.jpg', legenda:"Presidente", small: false, link: "https://pt.wikipedia.org/wiki/Nereu_Ramos"},
+                    {url:'', legenda: "Sem Vice-Presidente", small: true}
+                ]   
+            },
+            {
+                numero: '1957',
+                nome: "Juscelino Kubitschek",
+                partido: "PSD",
+                fotos:[
+                    {url:'Juscelino.jpg', legenda:"Presidente", small: false, link: "https://pt.wikipedia.org/wiki/Juscelino_Kubitscheks"},
+                    {url:'Jango.jpg', legenda: "Vice-Presidente", small: true}
+                ]   
+            },
+            {
+                numero: '1961',
+                nome: "Jânio Quadros",
+                partido: "PTN",
+                fotos:[
+                    {url:'Janio_Quadros.png', legenda:"Presidente", small: false, link: "https://pt.wikipedia.org/wiki/J%C3%A2nio_Quadros"},
+                    {url:'Jango.jpg', legenda: "Vice-Presidente", small: true}
+                ]   
+            },
+            {
+                numero: '1962',
+                nome: "Ranieri Mazzilli",
+                partido: "PSD",
+                fotos:[
+                    {url:'Mazzilli.jpg', legenda:"Presidente", small: false, link: "https://pt.wikipedia.org/wiki/Ranieri_Mazzilli"},
+                    {url:'', legenda: "Sem Vice-Presidente", small: true}
+                ]   
+            },
+            {
+                numero: '1963',
+                nome: "João Goulart",
+                partido: "PTB",
+                fotos:[
+                    {url:'Jango.jpg', legenda:"Presidente", small: false, link: "https://pt.wikipedia.org/wiki/Jo%C3%A3o_Goulart"},
+                    {url:'', legenda: "Sem Vice-Presidente", small: true}
+                ]   
+            },
+            {
+                numero: '1964',
+                nome: "Ranieri Mazzilli",
+                partido: "PSD",
+                fotos:[
+                    {url:'Ranieiri.jpg', legenda:"Presidente", small: false, link: "https://pt.wikipedia.org/wiki/Ranieri_Mazzilli"},
+                    {url:'', legenda: "Sem Vice-Presidente", small: true}
+                ]   
+            },
+            {
+                numero: '1965',
+                nome: "Humberto Castelo Branco",
+                partido: "Arena",
+                fotos:[
+                    {url:'Castelobranco.jpg', legenda:"Presidente", small: false, link: "https://pt.wikipedia.org/wiki/Humberto_Castelo_Branco"},
+                    {url:'Jose_Maria_Alkmin.jpg', legenda: "Vice-Presidente", small: true}
+                ]   
+            },
+            {
+                numero: '1967',
+                nome: "Artur da Costa e Silva",
+                partido: "Arena",
+                fotos:[
+                    {url:'Costa_e_Silva.jpg', legenda:"Presidente", small: false, link: "https://pt.wikipedia.org/wiki/Costa_e_Silvao"},
+                    {url:'Pedro_Aleixo.jpg', legenda: "Vice-Presidente", small: true}
+                ]   
+            },
+            {
+                numero: '1969',
+                nome: "Emílio Garrastazu Médici",
+                partido: "Arena",
+                fotos:[
+                    {url:'medici.jpg', legenda:"Presidente", small: false, link: "https://pt.wikipedia.org/wiki/Em%C3%ADlio_Garrastazu_M%C3%A9dici"},
+                    {url:'Augusto_Hamann.jpg', legenda: "Vice-Presidente", small: true}
+                ]   
+            },
+            {
+                numero: '1974',
+                nome: "Ernesto Geisel",
+                partido: "Arena",
+                fotos:[
+                    {url:'Ernesto_Geisel.jpg', legenda:"Presidente", small: false, link: "https://pt.wikipedia.org/wiki/Ernesto_Geisel"},
+                    {url:'Adalberto.jpg', legenda: "Vice-Presidente", small: true}
+                ]   
+            },
+            {
+                numero: '1979',
+                nome: "João Figueiredo",
+                partido: "Arena/PDS",
+                fotos:[
+                    {url:'Figueiredo.jpg', legenda:"Presidente", small: false, link: "https://pt.wikipedia.org/wiki/Jo%C3%A3o_Figueiredo"},
+                    {url:'Aureliano_Chaves.jpg', legenda: "Vice-Presidente", small: true}
+                ]   
+            },
+            {
+                numero: '1985',
+                nome: "José Sarney",
+                partido: "PMDB",
+                fotos:[
+                    {url:'sarney.jpg', legenda:"Presidente", small: false, link: "https://pt.wikipedia.org/wiki/Jos%C3%A9_Sarney"},
+                    {url:'', legenda: "Sem Vice-Presidente", small: true}
+                ]   
+            },
+            {
+                numero: '1990',
+                nome: "Fernando Collor",
+                partido: "PRN",
+                fotos:[
+                    {url:'collor.jpg', legenda:"Presidente", small: false, link: "https://pt.wikipedia.org/wiki/Fernando_Collor"},
+                    {url:'itmar_franco.gif', legenda: "Vice-Presidente", small: true}
+                ]   
+            },
+            {
+                numero: '1992',
+                nome: "Itamar Franco",
+                partido: "PMDB",
+                fotos:[
+                    {url:'itmar_franco.gif', legenda:"Presidente", small: false, link: "https://pt.wikipedia.org/wiki/Itamar_Franco"},
+                    {url:'', legenda: "Sem Vice-Presidente", small: true}
+                ]   
+            },
+            {
+                numero: '1995',
+                nome: "Fernando Henrique Cardoso",
+                partido: "PSDB",
+                fotos:[
+                    {url:'Fernando_Henrique_Cardoso_(1999).jpg', legenda:"Presidente", small: false, link: "https://pt.wikipedia.org/wiki/Fernando_Henrique_Cardoso"},
+                    {url:'Marco_maciel_2010.jpg', legenda: "Vice-Presidente", small: true}
+                ]   
+            },
+            {
+                numero: '2003',
+                nome: "Luiz Inácio Lula da Silva",
+                partido: "PT",
+                fotos:[
+                    {url:'lula.jpg', legenda:"Presidente", small: false, link: "https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva"},
+                    {url:'jose_alencar.jpg', legenda: "Vice-Presidente", small: true}
+                ]   
+            },
+            {
+                numero: '2011',
+                nome: "Dilma Rousseff",
+                partido: "PT",
+                fotos:[
+                    {url:'dilma.jpg', legenda:"Presidente", small: false, link: "https://pt.wikipedia.org/wiki/Dilma_Rousseff"},
+                    {url:'temer.jpg', legenda: "Vice-Presidente", small: true}
+                ]   
+            },
+            {
+                numero: '2016',
+                nome: "Michel Temer",
+                partido: "PMDB",
+                fotos:[
+                    {url:'temer.jpg', legenda:"Presidente", small: false, link: "https://pt.wikipedia.org/wiki/Michel_Temer"},
+                    {url:'', legenda: "Sem Vice-Presidente", small: true}
+                ]   
+            },
+            {
+                numero: '2019',
+                nome: "Jair Bolsonaro",
+                partido: "PSL",
+                fotos:[
+                    {url:'bolsonaro.jpg', legenda:"Presidente", small: false, link: "https://pt.wikipedia.org/wiki/Jair_Bolsonaro"},
+                    {url:'mourao.jpg', legenda: "Vice-Presidente", small: true}
                 ]   
             },
         ]
