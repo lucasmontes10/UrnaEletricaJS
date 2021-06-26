@@ -7,14 +7,17 @@ O projeto Urna Eletrônica Histórica é uma aplicação totalmente em JavaScrip
 
 
 ## Layout web
-- Tela Inicial
-![Web 1](https://github.com/lucasmontes10/UrnaEletricaJS/blob/main/images/final/Inicial.png)
+- Tela Inicial  
 
-- Tela de voto
+![Web 1](https://github.com/lucasmontes10/UrnaEletricaJS/blob/main/images/final/Inicio.png)
+
+- Tela de voto  
+
 ![Web 2](https://github.com/lucasmontes10/UrnaEletricaJS/blob/main/images/final/telaCandidato.png)
 
-- Tela Final, logo de depois confirmar é aberta uma página no Wikipédia referente ao presidente selecionado
-  ![Web 3](https://github.com/lucasmontes10/UrnaEletricaJS/blob/main/images/final/final.png)
+- Tela Final, logo de depois confirmar é aberta uma página no Wikipédia referente ao presidente selecionado  
+
+![Web 3](https://github.com/lucasmontes10/UrnaEletricaJS/blob/main/images/final/final.png)
 
 # Tecnologias utilizadas
 
